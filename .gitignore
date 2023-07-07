@@ -1,0 +1,6 @@
+.vscode/
+读我*.txt
+test*
+*.exe
+obj/
+bin/
