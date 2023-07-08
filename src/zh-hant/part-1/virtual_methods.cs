@@ -1,6 +1,6 @@
 /*
 本節視頻
-https://www.bilibili.com/video/BV1CM411L7j8/ 「程式設計指南」什麽是虛擬方法？虛擬方法和抽象方法的異同，虛擬成員的延伸模組
+https://www.bilibili.com/video/BV1CM411L7j8/ 「程式設計指南」什麽是虛擬方法？虛擬方法和抽象方法的異同，虛擬成員的拓展
 
 本節文章
 https://learnscript.net/zh-hant/programming/part-1/virtual-methods/ 什麽是虛擬方法？虛擬和抽象方法有何不同
