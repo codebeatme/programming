@@ -2,21 +2,11 @@
 本节视频
 https://www.bilibili.com/video/BV1Sv4y1E7wU/ 「编程指南」什么是类的属性？属性和字段的异同，属性的本质是方法
 
-从外部使用的语法上看，类的属性和字段没有区别，但他们存在一些不同
-* 属性一般包含一些简单的逻辑，用于对数据的合理性的检测
-* 属性的本质是方法，而这项转换工作通常在编译时完成
-
-版本
-.NET 7.0.2
-VSCode 1.77.3
-
-相关视频
-https://www.bilibili.com/video/BV1WL411m7UZ/ 什么是类的成员？什么是类的字段和方法
-
-关于本系列教程的使用说明和相关问题解答，请参考文章 https://www.bilibili.com/read/cv23041317
+本节文章
+https://learnscript.net/zh/programming/part-1/class-properties/ 什么是类的属性？属性和字段有何不同
 */
 
-/// 类 Plan
+// 一个关于计划的类
 class Plan
 {
     /// 字段 Name，表示计划的名称
@@ -29,17 +19,16 @@ class Plan
         get => _totalDays;
         set
         {
-
             // 不能将总天数设置为小于 0
             if (value < 0)
-                Console.WriteLine($"总天数不能小于 0");
+                Console.WriteLine("总天数不能小于 0");
             else
                 _totalDays = value;
-
         }
     }
 
     ///
+    // // ERROR get_TotalDays 已经被占用
     // public int get_TotalDays() { return 0; }
     ///
 }

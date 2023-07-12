@@ -1,11 +1,14 @@
-﻿// 指定变量类型为类 A，但值的类型分别为类 A，B，C，D
-A a1 = new A();
-A a2 = new B();
-A a3 = new C();
-A a4 = new D();
+﻿/// 创建实例 plan
+Plan plan = new Plan();
 
-// 分别调用他们的 Show 方法
-a1.Show("A a1 = new A();...");
-a2.Show("A a2 = new B();...");
-a3.Show("A a3 = new C();...");
-a4.Show("A a4 = new D();...");
+/// 访问字段 Name 和属性 TotalDays
+// 设置计划的名称
+plan.Name = "一个计划";
+
+// 设置计划的总天数
+plan.TotalDays = -100;
+
+// 显示计划的信息
+Console.WriteLine(
+    $"计划 “{plan.Name}” 一共持续 {plan.TotalDays} 天"
+    );

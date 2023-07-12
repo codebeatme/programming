@@ -3,7 +3,7 @@
 https://www.bilibili.com/video/BV1CM4y1172a/ 「程式設計指南」什麽是流程控製？什麽是條件控製和迴圈控製
 
 本節文章
-https://learnscript.net/zh-hant/programming/part-1/flow-control-conditions-loops/ 什麽是流程控製，條件控製，迴圈控製
+https://learnscript.net/zh-hant/programming/part-1/flow-control-conditions-loops/ 什麽是流程控製，條件，迴圈控製
 */
 
 /// 條件控製

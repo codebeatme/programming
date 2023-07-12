@@ -3,7 +3,7 @@
 https://www.bilibili.com/video/BV1CM4y1172a/ 「编程指南」什么是流程控制？什么是条件控制和循环控制
 
 本节文章
-https://learnscript.net/zh/programming/part-1/flow-control-conditions-loops/ 什么是流程控制，条件控制，循环控制
+https://learnscript.net/zh/programming/part-1/flow-control-conditions-loops/ 什么是流程控制，条件，循环控制
 */
 
 /// 条件控制
