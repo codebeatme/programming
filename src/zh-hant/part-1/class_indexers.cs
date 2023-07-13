@@ -1,0 +1,50 @@
+/*
+本節視頻
+https://www.bilibili.com/video/BV1HM4y1a71U/ 「程式設計指南」什麽是類別的索引？類別的索引的作用
+
+類別的索引，可以讓類別像陣列一樣被存取
+* 索引需要指定一個參數，以區分需要傳回的具體內容
+
+版本
+.NET 7.0.2
+VSCode 1.77.3
+
+關於本系列教程的使用說明和相關問題解答，請參考文章 https://www.bilibili.com/read/cv23041317
+*/
+
+/// 類別 Food，表示食物
+class Food
+{
+
+    /// 欄位 _names，表示所有食物的名稱
+    private string[] _names = new[] {
+        "湯", "沙拉", "甜點", "茶"
+        };
+
+    /// 索引子，通過整型參數獲得食物名稱
+    public string this[int i]
+    {
+        get { return _names[i]; }
+    }
+
+    /// 屬性 Count，表示食物種類的數量
+    public int Count
+    {
+        get { return _names.Length; }
+    }
+
+    ///
+}
+
+/*
+請將以下程式碼復製到 Program.cs 中，以執行本節範例
+
+/// 建立 Food 的執行個體
+Food food = new Food();
+
+/// 使用索引子顯示所有食物的名稱
+Console.WriteLine("今天供應以下食物：");
+
+for (int i = 0; i < food.Count; i++)
+    Console.WriteLine($"\t{food[i]}");
+*/

@@ -41,7 +41,7 @@ class Employee
 
     public static string operator +(Employee employee, string name)
     {
-        // 操作目標為字串，將雇員的姓名與其拼接
+        // 操作目標為字串，將雇員的姓名與其相加
         return employee.Name + name;
     }
 }

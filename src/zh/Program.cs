@@ -1,14 +1,8 @@
-﻿/// 创建实例 plan
-Plan plan = new Plan();
+﻿/// 创建 Food 的实例
+Food food = new Food();
 
-/// 访问字段 Name 和属性 TotalDays
-// 设置计划的名称
-plan.Name = "一个计划";
+/// 使用索引显示所有食物的名称
+Console.WriteLine($"今天供应以下食物：");
 
-// 设置计划的总天数
-plan.TotalDays = -100;
-
-// 显示计划的信息
-Console.WriteLine(
-    $"计划 “{plan.Name}” 一共持续 {plan.TotalDays} 天"
-    );
+for (int i = 0; i < food.Count; i++)
+    Console.WriteLine($"\t{food[i]}");
