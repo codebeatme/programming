@@ -10,8 +10,6 @@ VSCode 1.77.3
 
 相关视频
 https://www.bilibili.com/video/BV1pN411w7z1/ 什么是语句和表达式？语句和表达式的区别
-
-关于本系列教程的使用说明和相关问题解答，请参考文章 https://www.bilibili.com/read/cv23041317
 */
 
 /// '你有一条新的短信' 是字面量
@@ -27,7 +25,7 @@ let message2 = message
 let obj1 = {}
 let obj2 = new Object()
 
-/// 单引号，双引号，反引号都可以定义字符串
+/// 单引号，双引号，反引号都可以表示字符串
 let str1 = ''
 let str2 = ""
 let str3 = ``

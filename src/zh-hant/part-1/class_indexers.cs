@@ -2,14 +2,8 @@
 本節視頻
 https://www.bilibili.com/video/BV1HM4y1a71U/ 「程式設計指南」什麽是類別的索引？類別的索引的作用
 
-類別的索引，可以讓類別像陣列一樣被存取
-* 索引需要指定一個參數，以區分需要傳回的具體內容
-
-版本
-.NET 7.0.2
-VSCode 1.77.3
-
-關於本系列教程的使用說明和相關問題解答，請參考文章 https://www.bilibili.com/read/cv23041317
+本節文章
+https://learnscript.net/zh-hant/programming/part-1/class-indexers/ 什麽是類別的索引子
 */
 
 /// 類別 Food，表示食物

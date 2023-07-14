@@ -25,8 +25,8 @@ class Cup {
 }
 
 /// 引用型变量，将保持对实例的引用
-let cup1 = new Cup();
-// cup2 和 cup1 会引用同一个实例 
+let cup1 = new Cup()
+// cup2 和 cup1 会引用同一个实例
 let cup2 = cup1
 
 /// 无论通过 cup1，还是 cup2 修改或显示字段都是一样的

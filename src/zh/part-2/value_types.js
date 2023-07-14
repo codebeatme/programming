@@ -26,4 +26,4 @@ let message2 = message1
 /// 为 message1 写入新值，不会影响 message2
 message1 = '今天天气很糟糕'
 // 显示变量 message2，以观察其值是否发生了变化
-console.log(`message2=${message2}`)
+console.log(`message2 = ${message2}`)
