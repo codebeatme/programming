@@ -9,6 +9,6 @@ https://learnscript.net/zh-hant/programming/part-3/processes-and-threads/ 什麽
 // 匯入類別 Process 所在的命名空間
 using System.Diagnostics;
 
-// 開啟記事本程式
+// 開啟記事本應用
 Process.Start("notepad");
 */

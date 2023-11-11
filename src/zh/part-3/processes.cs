@@ -9,6 +9,6 @@ https://learnscript.net/zh/programming/part-3/processes-and-threads/ 什么是�
 // 导入类 Process 所在的命名空间
 using System.Diagnostics;
 
-// 打开记事本程序
+// 打开记事本应用
 Process.Start("notepad");
 */
