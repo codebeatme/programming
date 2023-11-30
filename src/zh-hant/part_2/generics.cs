@@ -14,7 +14,7 @@ class Box<T>
     /// 箱子中包含的所有物品
     private List<T> items = new();
 
-    /// 將物品 item 打包到箱子中
+    /// 將物品 item 封裝到箱子中
     public void Pack(T item)
     {
         items.Add(item);
@@ -54,10 +54,10 @@ class Pet
 請將以下程式碼復製到 Program.cs 中，以執行本節範例
 
 /// 建立泛型類別 Box<T> 的執行個體
-// 打包蘋果的箱子 appleBox
+// 封裝蘋果的箱子 appleBox
 Box<Apple> appleBox = new()
 { Name = "蘋果箱子" };
-// 打包寵物的箱子 petBox
+// 封裝寵物的箱子 petBox
 Box<Pet> petBox = new()
 { Name = "寵物箱子" };
 

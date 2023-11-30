@@ -14,7 +14,7 @@ class Hero : Unit
         // 呼叫基礎類別的建構方法
         : base(name, "英雄", hp, ap)
     {
-        // 為 Hero 新增的欄位指派
+        // 為 Hero 增加的欄位指派
         Skill = skill;
     }
 

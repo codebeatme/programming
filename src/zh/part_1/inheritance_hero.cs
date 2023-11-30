@@ -14,7 +14,7 @@ class Hero : Unit
         // 调用基类的构造方法
         : base(name, "英雄", hp, ap)
     {
-        // 为 Hero 新增的字段赋值
+        // 为 Hero 增加的字段赋值
         Skill = skill;
     }
 
