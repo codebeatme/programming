@@ -4,7 +4,7 @@ https://learnscript.net/zh-hant/programming/part-3/optional-parameters/ 什麽�
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 顯示歡迎訊息的函式
 void Welcome(

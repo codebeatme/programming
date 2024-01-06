@@ -19,16 +19,16 @@ interface IStoppable
 interface IControllable : IPlayable, IStoppable
 { }
 
-/// 類別 Player，實現介面 IControllable
+/// 類別 Player，實作介面 IControllable
 class Player : IControllable
 {
-    // 實現介面的方法 Play
+    // 實作介面的方法 Play
     public void Play()
     {
         Console.WriteLine("開始播放了哦！");
     }
 
-    // 實現介面的方法 Stop
+    // 實作介面的方法 Stop
     public void Stop()
     {
         Console.WriteLine("停止播放！");

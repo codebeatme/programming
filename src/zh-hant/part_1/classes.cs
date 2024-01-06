@@ -22,7 +22,7 @@ class Cat
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立執行個體
 Cat cat = new();

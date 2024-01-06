@@ -4,7 +4,7 @@ https://learnscript.net/zh-hant/programming/part-2/delegate-combining-and-removi
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 為英雄增加 5 點生命值
 void Heal(SuperHero hero)

@@ -12,7 +12,7 @@ class Food
         "汤", "沙拉", "甜点", "茶"
         };
 
-    /// 索引器，通过整型参数获得食物名称
+    /// 索引器，通过整数类型参数获得食物名称
     public string this[int i]
     {
         get { return _names[i]; }

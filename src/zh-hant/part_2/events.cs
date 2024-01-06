@@ -32,7 +32,7 @@ class MessageArgs : EventArgs
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 處理事件的函式，用來顯示來自學校的訊息
 void ReceiveMessage(object? sender, EventArgs e)

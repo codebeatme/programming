@@ -1,6 +1,6 @@
 /*
 本節文章
-https://learnscript.net/zh-hant/programming/part-2/pointers/ 什麽是指針？指針和參考型別有何不同
+https://learnscript.net/zh-hant/programming/part-2/pointers/ 什麽是指針？指針和參考類型有何不同
 */
 
 #include <iostream>

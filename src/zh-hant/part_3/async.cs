@@ -4,7 +4,7 @@ https://learnscript.net/zh-hant/programming/part-3/synchronous-and-asynchronous/
 */
 
 /*
-請將以下程式碼復製到 某個視窗的程式碼檔案 中，以執行本節範例
+請將以下程式碼複製到 某個視窗的程式碼檔案 中，以執行本節範例
 
 // 取得一個指定頁面的 HTML 程式碼
 async Task<string> getHTML()

@@ -35,7 +35,7 @@ class SuperHero
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 函式 ShowStatus 用來顯示英雄的狀態
 void ShowStatus(SuperHero hero)

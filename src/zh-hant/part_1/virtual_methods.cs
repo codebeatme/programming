@@ -36,9 +36,9 @@ class Bunny : Animal
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
-/// 虛擬方法本身已經被實現，因此可以建立相關執行個體
+/// 虛擬方法本身已經被實作，因此可以建立相關執行個體
 Animal animal = new();
 Kitty kitty = new();
 Bunny bunny = new();

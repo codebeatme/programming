@@ -6,9 +6,9 @@ https://learnscript.net/zh/programming/part-2/enumerations/ 什么是枚举？�
 /// 枚举 LightColor，表示亮色
 enum LightColor
 {
-    /// 第一个枚举成员，默认对应整型数字 0
+    /// 第一个枚举成员，默认对应整数类型数字 0
     White,
-    /// 后续成员对应的整型数字，依次递增 1
+    /// 后续成员对应的整数类型数字，依次递增 1
     // 成员 Red = 1
     Red,
     // 成员 Green = 2
@@ -19,7 +19,7 @@ enum LightColor
 /// 枚举 DarkColor，表示暗色
 enum DarkColor
 {
-    /// 可以为成员指定其对应的整型数字
+    /// 可以为成员指定其对应的整数类型数字
     Black = 100,
     Blue = 200,
     ///

@@ -18,17 +18,17 @@ interface ITalkable
     }
 }
 
-/// 類別 ChatRoom，實現了介面 ITalkable
+/// 類別 ChatRoom，實作了介面 ITalkable
 class ChatRoom : ITalkable
 {
-    // 實現介面的屬性 Sender
+    // 實作介面的屬性 Sender
     public string Sender { get; set; } = "<無名者>";
-    // 實現介面的屬性 Message
+    // 實作介面的屬性 Message
     public string Message { get; set; } = "<一條訊息>";
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 // 使用介面設定訊息發送人和內容
 ITalkable talkable = new ChatRoom();

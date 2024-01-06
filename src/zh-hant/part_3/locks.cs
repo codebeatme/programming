@@ -34,7 +34,7 @@ class CreditCard
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 // 一個用於被新執行緒呼叫的函式
 void PayForMe()

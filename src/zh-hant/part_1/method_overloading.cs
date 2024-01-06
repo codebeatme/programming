@@ -7,13 +7,13 @@ https://learnscript.net/zh-hant/programming/part-1/method-overloading-and-call/ 
 class Info
 {
 
-    /// 第一個方法 Show，有一個字串型別的參數
+    /// 第一個方法 Show，有一個字串類型的參數
     public void Show(string fullName)
     {
         Console.WriteLine($"全名 “{fullName}”");
     }
 
-    /// 第二個方法 Show，雖然也是只有一個參數，但該參數的型別為整型，所以沒有問題
+    /// 第二個方法 Show，雖然也是只有一個參數，但該參數的類型為整數類型，所以沒有問題
     public void Show(int age)
     {
         Console.WriteLine($"年齡 {age}");
@@ -36,7 +36,7 @@ class WorkerInfo : Info
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立 Info 的執行個體
 Info info = new();

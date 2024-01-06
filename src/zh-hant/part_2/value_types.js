@@ -1,9 +1,9 @@
 /*
 本節文章
-https://learnscript.net/zh-hant/programming/part-2/value-and-reference-types/ 什麽是實值型別，參考型別？有何不同
+https://learnscript.net/zh-hant/programming/part-2/value-and-reference-types/ 什麽是實值類型，參考類型？有何不同
 */
 
-/// 實值型別變數在讀取或寫入值時，互不影響
+/// 實值類型變數在讀取或寫入值時，互不影響
 let message1 = '今天天氣不錯'
 // 讀取 message1 的值，將該值寫入 message2
 let message2 = message1

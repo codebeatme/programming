@@ -4,7 +4,7 @@ https://learnscript.net/zh-hant/programming/part-3/positional-and-named-paramete
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 一個用於建立計劃的函式
 void CreatePlan(string name, int days, string leader, string[] members)

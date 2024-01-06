@@ -6,7 +6,7 @@ https://learnscript.net/zh-hant/programming/part-2/generic-constraints/ 什麽�
 /*
 // 以下程式碼與 generics.cs 只能有一個不被註解
 
-/// 類別 Box，表示箱子，擁有型別參數 T
+/// 類別 Box，表示箱子，擁有類型參數 T
 class Box<T> where T : Pet
 {
     // 箱子的名稱
@@ -15,7 +15,7 @@ class Box<T> where T : Pet
     /// 箱子中包含的所有物品
     private List<T> items = new();
 
-    /// 將物品 item 打包到箱子中
+    /// 將物品 item 封裝到箱子中
     public void Pack(T item)
     {
         items.Add(item);
@@ -53,7 +53,7 @@ class Pet
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 // ERROR Box<T> 不能使用 Apple 類別
 Box<Apple> box = new();

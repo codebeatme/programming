@@ -25,7 +25,7 @@ struct Book
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立結構，並通過 book1 指派給 book2，book1 和 book2 儲存了各自的結構
 Book book1 = new()

@@ -20,14 +20,14 @@ abstract class Animal
 /// 衍生類別 Kitty
 class Kitty : Animal
 {
-    // 實現 Animal 的抽象方法 Bark
+    // 實作 Animal 的抽象方法 Bark
     public override void Bark()
     {
         Console.WriteLine("小貓小貓，喵喵喵！");
     }
 }
 
-/// 衍生類別 Herbivore，沒有實現抽象方法 Bark，因此也是抽象類別
+/// 衍生類別 Herbivore，沒有實作抽象方法 Bark，因此也是抽象類別
 abstract class Herbivore : Animal
 { }
 */

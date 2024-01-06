@@ -4,7 +4,7 @@ https://learnscript.net/zh-hant/programming/part-3/variadic-parameters/ 什麽�
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 顯示一組水果資訊的函式
 void ListFruit(

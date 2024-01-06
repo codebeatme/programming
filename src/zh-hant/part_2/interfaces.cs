@@ -1,6 +1,6 @@
 /*
 本節文章
-https://learnscript.net/zh-hant/programming/part-2/interfaces-and-implement/ 什麽是介面，實現介面
+https://learnscript.net/zh-hant/programming/part-2/interfaces-and-implement/ 什麽是介面，實作介面
 */
 
 // 以下程式碼與 interface_inheritance.cs 只能有一個不被註解
@@ -14,13 +14,13 @@ interface IReadable
     public string GetContent();
 }
 
-/// 類別 Note，實現了介面 IReadable
+/// 類別 Note，實作了介面 IReadable
 class Note : IReadable
 {
-    /// 實現介面的屬性 PageNumber
+    /// 實作介面的屬性 PageNumber
     public int PageNumber { get; set; } = 0;
 
-    /// 實現介面的方法 GetContent
+    /// 實作介面的方法 GetContent
     public string GetContent()
     {
         if (PageNumber >= 0 && PageNumber < contents.Length)
@@ -42,7 +42,7 @@ class Note : IReadable
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 讀取並顯示可讀性內容
 void ReadSomething(IReadable something)

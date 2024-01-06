@@ -46,7 +46,7 @@ class Unit
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立 Unit 和 Hero 的執行個體
 Unit unit = new("史萊姆", "敵人", 10, 1);

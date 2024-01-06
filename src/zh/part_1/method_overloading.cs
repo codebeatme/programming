@@ -13,7 +13,7 @@ class Info
         Console.WriteLine($"全名 “{fullName}”");
     }
 
-    /// 第二个方法 Show，虽然也是只有一个参数，但该参数的类型为整型，所以没有问题
+    /// 第二个方法 Show，虽然也是只有一个参数，但该参数的类型为整数类型，所以没有问题
     public void Show(int age)
     {
         Console.WriteLine($"年龄 {age}");

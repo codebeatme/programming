@@ -20,7 +20,7 @@ class Employee
     /// 多載運算子 +
     public static int operator +(Employee employee, int age)
     {
-        // 作業目標為整型，將雇員的年齡與其相加
+        // 作業目標為整數類型，將雇員的年齡與其相加
         return employee.Age + age;
     }
 
@@ -32,7 +32,7 @@ class Employee
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立執行個體，初始化雇員姓名和年齡
 Employee employee = new("小小", 20);

@@ -4,14 +4,14 @@ https://learnscript.net/zh-hant/programming/part-3/boxing-and-unboxing/ 什麽�
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
-// 方法的參數型別為 object，與 number 的型別不同
+// 方法的參數類型為 object，與 number 的類型不同
 void printSomething(object something)
 {
     if (something is int)
     {
-        // 根據堆積中的 object 物件，產生一個等效的整型值，並儲存在堆疊中
+        // 根據堆積中的 object 物件，產生一個等效的整數類型值，並儲存在堆疊中
         int n = (int)something;
         Console.WriteLine($"他是數值 {n}");
     }

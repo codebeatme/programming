@@ -11,7 +11,7 @@ void printSomething(object something)
 {
     if (something is int)
     {
-        // 根据堆中的 object 对象，产生一个等效的整型值，并存储在栈中
+        // 根据堆中的 object 对象，产生一个等效的整数类型值，并存储在栈中
         int n = (int)something;
         Console.WriteLine($"他是数字 {n}");
     }

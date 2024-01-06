@@ -1,6 +1,6 @@
 /*
 本節文章
-https://learnscript.net/zh-hant/programming/part-2/value-and-reference-types/ 什麽是實值型別，參考型別？有何不同
+https://learnscript.net/zh-hant/programming/part-2/value-and-reference-types/ 什麽是實值類型，參考類型？有何不同
 */
 
 /// 類別 Cup，表示了一個茶杯
@@ -9,7 +9,7 @@ class Cup {
     price = 10
 }
 
-/// 參考型別變數，將保持對執行個體的參考
+/// 參考類型變數，將保持對執行個體的參考
 let cup1 = new Cup()
 // cup2 和 cup1 會參考同一個執行個體
 let cup2 = cup1

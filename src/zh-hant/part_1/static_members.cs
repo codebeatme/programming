@@ -32,7 +32,7 @@ class Dog
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立 Dog 類別的執行個體 dog1，dog2
 Dog dog1 = new();

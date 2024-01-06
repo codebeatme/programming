@@ -12,7 +12,7 @@ class Food
         "湯", "沙拉", "甜點", "茶"
         };
 
-    /// 索引子，通過整型參數獲得食物名稱
+    /// 索引子，通過整數類型參數獲得食物名稱
     public string this[int i]
     {
         get { return _names[i]; }
@@ -28,7 +28,7 @@ class Food
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立 Food 的執行個體
 Food food = new();

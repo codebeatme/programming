@@ -3,7 +3,7 @@
 https://learnscript.net/zh-hant/programming/part-2/iterators/ 什麽是疊代器
 */
 
-/// 類別 Name，表示姓名，實現了疊代器功能
+/// 類別 Name，表示姓名，實作了疊代器功能
 class Name : System.Collections.IEnumerator
 {
     /// 一個人的全名，依次為名，中間名，姓
@@ -52,7 +52,7 @@ class Name : System.Collections.IEnumerator
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立 Name 的執行個體，並設定名，中間名和姓
 Name name = new()

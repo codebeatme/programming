@@ -4,9 +4,9 @@ https://learnscript.net/zh-hant/programming/part-2/exceptions/ 什麽是例外�
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
-/// 實現除法的方法，會檢查除數是否有問題
+/// 實作除法的方法，會檢查除數是否有問題
 int Divide(int dividend, int divisor)
 {
 

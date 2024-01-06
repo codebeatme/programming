@@ -1,6 +1,6 @@
 /*
 本節文章
-https://learnscript.net/zh-hant/programming/part-2/interface-explicit-and-implicit-implementation/ 什麽是介面的明確，隱含實現？有何不同
+https://learnscript.net/zh-hant/programming/part-2/interface-explicit-and-implicit-implementation/ 什麽是介面的明確，隱含實作？有何不同
 */
 
 /// 介面 IMovable，表示可移動性
@@ -17,16 +17,16 @@ interface IRotatable
     void Show();
 }
 
-/// 類別 Car，實現了介面 IMovable，IRotatable
+/// 類別 Car，實作了介面 IMovable，IRotatable
 class Car : IMovable, IRotatable
 {
-    // 隱含實現，同時顯示剩余的油量和方向盤的角度
+    // 隱含實作，同時顯示剩余的油量和方向盤的角度
     // public void Show()
     // {
     //     Console.WriteLine("糟糕只剩 3 克油了，而且方向盤轉到了 -90 度");
     // }
 
-    /// 明確實現，分別顯示剩余的油量和方向盤的角度
+    /// 明確實作，分別顯示剩余的油量和方向盤的角度
     void IMovable.Show()
     {
         Console.WriteLine("只剩 3 克油了");
@@ -39,7 +39,7 @@ class Car : IMovable, IRotatable
 }
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 建立 Car 的執行個體
 Car car = new();

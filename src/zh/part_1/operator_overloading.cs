@@ -20,7 +20,7 @@ class Employee
     /// 重载运算符 +
     public static int operator +(Employee employee, int age)
     {
-        // 操作目标为整型，将雇员的年龄与其相加
+        // 操作目标为整数类型，将雇员的年龄与其相加
         return employee.Age + age;
     }
 

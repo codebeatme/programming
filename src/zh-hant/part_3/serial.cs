@@ -4,7 +4,7 @@ https://learnscript.net/zh-hant/programming/part-3/serial-parallel-concurrency/ 
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 // 序列方式，程式碼依次執行
 // 第一個 for 迴圈執行完畢後，才會執行第二個

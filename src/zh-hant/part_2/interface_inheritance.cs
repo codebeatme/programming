@@ -22,13 +22,13 @@ interface IEditable : IReadable
     void SetContent(int pageNumber, string content);
 }
 
-/// 類別 Note，實現了介面 IEditable
+/// 類別 Note，實作了介面 IEditable
 class Note : IEditable
 {
-    /// 實現介面的屬性 PageNumber
+    /// 實作介面的屬性 PageNumber
     public int PageNumber { get; set; } = 0;
 
-    /// 實現介面的方法 GetContent
+    /// 實作介面的方法 GetContent
     public string GetContent()
     {
         // 取得屬性 PageNumber 指定的頁的內容
@@ -39,7 +39,7 @@ class Note : IEditable
             return string.Empty;
     }
 
-    /// 實現介面的方法 SetContent
+    /// 實作介面的方法 SetContent
     public void SetContent(int pageNumber, string content)
     {
         // 如果頁碼 pageNumber 是合理的，則設定對應頁的內容
@@ -59,7 +59,7 @@ class Note : IEditable
 */
 
 /*
-請將以下程式碼復製到 Program.cs 中，以執行本節範例
+請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 /// 讀取並顯示可讀性內容
 void ReadSomething(IReadable something)

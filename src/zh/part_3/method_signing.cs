@@ -6,13 +6,13 @@ https://learnscript.net/zh/programming/part-3/method-signing/ 什么是方法签
 /// 类 Cannon，表示加农炮
 class Cannon
 {
-    /// 第一个 Attack 方法，只有一个整型参数
+    /// 第一个 Attack 方法，只有一个整数类型参数
     public void Attack(int point)
     {
         Console.WriteLine($"可造成 {point} 点伤害");
     }
 
-    /// 第二个 Attack 方法，有一个整型参数和一个布尔型参数
+    /// 第二个 Attack 方法，有一个整数类型参数和一个布尔类型参数
     public void Attack(int point, bool critical)
     {
         Console.WriteLine($"可造成 {point} 点伤害 [暴击？{critical}]");
