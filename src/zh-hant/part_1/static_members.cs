@@ -15,17 +15,17 @@ class Dog
     /// 靜態欄位，所有狗狗呼叫 Talk 的次數
     public static int TalkCount = 0;
 
-    /// 執行個體方法，狗狗呼叫鏟屎官
+    /// 執行個體方法，狗狗呼喚鏟屎官
     public void Talk()
     {
         Console.WriteLine($"{Name}：“鏟屎官何在？”");
         TalkCount += 1;
     }
 
-    /// 靜態方法，顯示狗狗呼叫次數
+    /// 靜態方法，顯示狗狗呼喚次數
     public static void ShowCount()
     {
-        Console.WriteLine($"據狗狗聯合會發布的資料，所有狗狗一共呼叫了 {TalkCount} 次鏟屎官");
+        Console.WriteLine($"據狗狗聯合會發布的資料，所有狗狗一共呼喚了 {TalkCount} 次鏟屎官");
     }
 
     ///

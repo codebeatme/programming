@@ -7,4 +7,11 @@ int num = 123;
 object something = num;
 // age 是實值類型變數，因此需要取消裝箱
 int age = (int)something;
+
+int num1 = 100;
+// 以傳址的方式，將 num1 指派給 num2
+ref int num2 = ref num1;
+// 對 num2 指派，等同於對 num1 指派
+num2 = 200;
+Console.WriteLine($"num1={num1}");
 */

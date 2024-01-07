@@ -15,17 +15,17 @@ class Dog
     /// 静态字段，所有狗狗调用 Talk 的次数
     public static int TalkCount = 0;
 
-    /// 实例方法，狗狗呼叫铲屎官
+    /// 实例方法，狗狗呼唤铲屎官
     public void Talk()
     {
         Console.WriteLine($"{Name}：“铲屎官何在？”");
         TalkCount += 1;
     }
 
-    /// 静态方法，显示狗狗呼叫次数
+    /// 静态方法，显示狗狗呼唤次数
     public static void ShowCount()
     {
-        Console.WriteLine($"据狗狗联合会发布的数据，所有狗狗一共呼叫了 {TalkCount} 次铲屎官");
+        Console.WriteLine($"据狗狗联合会发布的数据，所有狗狗一共呼唤了 {TalkCount} 次铲屎官");
     }
 
     ///
