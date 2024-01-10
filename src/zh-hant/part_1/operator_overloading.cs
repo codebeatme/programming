@@ -2,7 +2,7 @@
 本節文章
 https://learnscript.net/zh-hant/programming/part-1/operator-overloading/ 什麽是運算子多載
 */
-
+/*
 /// 類別 Employee，表示雇員
 class Employee
 {
@@ -30,7 +30,7 @@ class Employee
         return employee.Name + name;
     }
 }
-
+*/
 /*
 請將以下程式碼複製到 Program.cs 中，以執行本節範例
 

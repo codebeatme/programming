@@ -1,27 +1,13 @@
-﻿// 将数组中所有非数组元素视为整数，并计算他们的和
-int SumArray(object[] array)
-{
-	int result = 0;
+﻿// 实例化类 Employee
+Employee employee = new("小熊猫");
+// 通过属性修改员工姓名
+employee.Name = "浣熊";
+// 使用年工作量 12345 评估员工
+employee.Evaluate(12345);
+// 显示创建过的 Employee 实例的个数
+Console.WriteLine($"创建了 {Employee.Count} 个 Employee");
 
-	// 循环数组中的元素，如果是数组，则调用 SumArray 自身
-	foreach (object item in array)
-	{
-		if (item is object[] a)
-			result += SumArray(a);
-		else
-			result += (int)item;
-	}
-
-	return result;
-}
-
-// 一个复杂的包含整数的数组
-object[] myArray = new object[] {
-	new object[] { 1, 2 },
-	10, 20,
-	new object[] { 100, 200 },
-};
-
-// 调用 SumArray 进行计算
-int myResult = SumArray(myArray);
-Console.WriteLine($"计算结果为：{myResult}");
+// 实例化类 Manager
+Manager manager = new("老熊猫");
+// 调用 Manager 类定义的 Manage 方法
+manager.Manage();

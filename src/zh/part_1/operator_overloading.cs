@@ -2,7 +2,7 @@
 本节文章
 https://learnscript.net/zh/programming/part-1/operator-overloading/ 什么是运算符重载
 */
-
+/*
 /// 类 Employee，表示雇员
 class Employee
 {
@@ -30,7 +30,7 @@ class Employee
         return employee.Name + name;
     }
 }
-
+*/
 /*
 请将以下代码复制到 Program.cs 中，以运行本节示例
 
