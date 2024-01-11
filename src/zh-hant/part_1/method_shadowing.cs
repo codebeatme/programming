@@ -3,52 +3,52 @@
 https://learnscript.net/zh-hant/programming/part-1/method-shadowing/ 什麽是方法遮蔽？遮蔽和覆寫有何不同
 */
 
-/// 類別 A
-class A
-{
-    public virtual void Show(string text)
-    {
-        Console.WriteLine($"{text} 呼叫了 A 的 Show 方法");
-    }
+// /// 類別 A
+// class A
+// {
+//     public virtual void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 呼叫了 A 的 Show 方法");
+//     }
 
-    // public virtual int Count
-    // {
-    //     get;
-    // }
-}
+//     // public virtual int Count
+//     // {
+//     //     get;
+//     // }
+// }
 
-/// 類別 B
-class B : A
-{
-    public override void Show(string text)
-    {
-        Console.WriteLine($"{text} 呼叫了 B 的 Show 方法");
-    }
+// /// 類別 B
+// class B : A
+// {
+//     public override void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 呼叫了 B 的 Show 方法");
+//     }
 
-    // public new int Count
-    // {
-    //     get;
-    // }
-}
+//     // public new int Count
+//     // {
+//     //     get;
+//     // }
+// }
 
-/// 類別 C
-class C : B
-{
-    public new virtual void Show(string text)
-    // public override void Show(string text)
-    {
-        Console.WriteLine($"{text} 呼叫了 C 的 Show 方法");
-    }
-}
+// /// 類別 C
+// class C : B
+// {
+//     public new virtual void Show(string text)
+//     // public override void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 呼叫了 C 的 Show 方法");
+//     }
+// }
 
-/// 類別 D
-class D : C
-{
-    public override void Show(string text)
-    {
-        Console.WriteLine($"{text} 呼叫了 D 的 Show 方法");
-    }
-}
+// /// 類別 D
+// class D : C
+// {
+//     public override void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 呼叫了 D 的 Show 方法");
+//     }
+// }
 
 /*
 請將以下程式碼複製到 Program.cs 中，以執行本節範例

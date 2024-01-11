@@ -33,6 +33,7 @@ class Employee
     // 建構子，用於初始化員工
     public Employee(string n)
     {
+        // 由於類別欄位 Count 歸屬於類別而非某個執行個體，因此會一直累計
         // 建立過的 Employee 執行個體的個數加 1
         Count++;
         // 初始化員工姓名
@@ -61,12 +62,17 @@ class Manager : Employee
 請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 // 具現化類別 Employee
-Employee employee = new("小熊貓");
+Employee employee1 = new("小熊貓");
 // 通過屬性修改員工姓名
-employee.Name = "浣熊";
+employee1.Name = "浣熊";
 // 使用年工作量 12345 評定員工
-employee.Evaluate(12345);
+employee1.Evaluate(12345);
 // 顯示建立過的 Employee 執行個體的個數
+Console.WriteLine($"建立了 {Employee.Count} 個 Employee");
+
+// 再次具現化類別 Employee
+Employee employee2 = new("大熊貓");
+// 此時顯示的個數為 2
 Console.WriteLine($"建立了 {Employee.Count} 個 Employee");
 
 // 具現化類別 Manager

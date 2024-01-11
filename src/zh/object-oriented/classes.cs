@@ -33,6 +33,7 @@ class Employee
     // 构造器，用于初始化员工
     public Employee(string n)
     {
+        // 由于类字段 Count 归属于类而非某个实例，因此会一直累计
         // 创建过的 Employee 实例的个数加 1
         Count++;
         // 初始化员工姓名
@@ -61,12 +62,17 @@ class Manager : Employee
 请将以下代码复制到 Program.cs 中，以运行本节示例
 
 // 实例化类 Employee
-Employee employee = new("小熊猫");
+Employee employee1 = new("小熊猫");
 // 通过属性修改员工姓名
-employee.Name = "浣熊";
+employee1.Name = "浣熊";
 // 使用年工作量 12345 评估员工
-employee.Evaluate(12345);
+employee1.Evaluate(12345);
 // 显示创建过的 Employee 实例的个数
+Console.WriteLine($"创建了 {Employee.Count} 个 Employee");
+
+// 再次实例化类 Employee
+Employee employee2 = new("大熊猫");
+// 此时显示的个数为 2
 Console.WriteLine($"创建了 {Employee.Count} 个 Employee");
 
 // 实例化类 Manager

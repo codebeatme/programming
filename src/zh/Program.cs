@@ -1,13 +1,11 @@
-﻿// 实例化类 Employee
-Employee employee = new("小熊猫");
-// 通过属性修改员工姓名
-employee.Name = "浣熊";
-// 使用年工作量 12345 评估员工
-employee.Evaluate(12345);
-// 显示创建过的 Employee 实例的个数
-Console.WriteLine($"创建了 {Employee.Count} 个 Employee");
+﻿// 所有变量的类型均为 A，但真实的对象类型分别为 A，B，C，D
+A a = new A();
+A b = new B();
+A c = new C();
+A d = new D();
 
-// 实例化类 Manager
-Manager manager = new("老熊猫");
-// 调用 Manager 类定义的 Manage 方法
-manager.Manage();
+// 分别调用他们的 Show 方法
+a.Show();
+b.Show();
+c.Show();
+d.Show();

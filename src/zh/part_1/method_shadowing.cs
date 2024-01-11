@@ -3,52 +3,52 @@
 https://learnscript.net/zh/programming/part-1/method-shadowing/ 什么是方法隐藏？隐藏和重写有何不同
 */
 
-/// 类 A
-class A
-{
-    public virtual void Show(string text)
-    {
-        Console.WriteLine($"{text} 调用了 A 的 Show 方法");
-    }
+// /// 类 A
+// class A
+// {
+//     public virtual void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 调用了 A 的 Show 方法");
+//     }
 
-    // public virtual int Count
-    // {
-    //     get;
-    // }
-}
+//     // public virtual int Count
+//     // {
+//     //     get;
+//     // }
+// }
 
-/// 类 B
-class B : A
-{
-    public override void Show(string text)
-    {
-        Console.WriteLine($"{text} 调用了 B 的 Show 方法");
-    }
+// /// 类 B
+// class B : A
+// {
+//     public override void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 调用了 B 的 Show 方法");
+//     }
 
-    // public new int Count
-    // {
-    //     get;
-    // }
-}
+//     // public new int Count
+//     // {
+//     //     get;
+//     // }
+// }
 
-/// 类 C
-class C : B
-{
-    public new virtual void Show(string text)
-    // public override void Show(string text)
-    {
-        Console.WriteLine($"{text} 调用了 C 的 Show 方法");
-    }
-}
+// /// 类 C
+// class C : B
+// {
+//     public new virtual void Show(string text)
+//     // public override void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 调用了 C 的 Show 方法");
+//     }
+// }
 
-/// 类 D
-class D : C
-{
-    public override void Show(string text)
-    {
-        Console.WriteLine($"{text} 调用了 D 的 Show 方法");
-    }
-}
+// /// 类 D
+// class D : C
+// {
+//     public override void Show(string text)
+//     {
+//         Console.WriteLine($"{text} 调用了 D 的 Show 方法");
+//     }
+// }
 
 /*
 请将以下代码复制到 Program.cs 中，以运行本节示例
