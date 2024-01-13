@@ -48,14 +48,12 @@ class Manager : Employee
     // Manager 類別加入了新的方法 Manage
     public void Manage()
     {
-        // 存取基礎類別的非私用成員
+        // 存取基底類別的非私用成員
         Console.WriteLine($"{Name} 來管理自己了，哦，看下工資層級？{level}");
     }
 
     // 建構子，用於初始化管理者
-    public Manager(string n) : base(n)
-    { }
-
+    public Manager(string n) : base(n) { }
 }
 
 /*

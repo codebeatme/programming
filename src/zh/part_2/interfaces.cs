@@ -1,67 +1,57 @@
-/*
-本节文章
-https://learnscript.net/zh/programming/part-2/interfaces-and-implement/ 什么是接口，实现接口
-*/
+// using System.Numerics;
 
-// 以下代码与 interface_inheritance.cs 只能有一个不被注释
+// // 接口 IMovable，表示可移动
+// interface IMovable
+// {
+//     // 属性 Location，表示当前位置
+//     public Vector2 Location { get; set; }
 
-/// 接口 IReadable，表示可读性
-interface IReadable
-{
-    // 当前的页码
-    public int PageNumber { get; set; }
-    // 获取当前页的内容
-    public string GetContent();
-}
+//     // 属性 Speed，表示移动速度
+//     public Vector2 Speed { get; set; }
 
-/// 类 Note，实现了接口 IReadable
-class Note : IReadable
-{
-    /// 实现接口的属性 PageNumber
-    public int PageNumber { get; set; } = 0;
+//     // 方法 Move，表示移动一次
+//     public void Move()
+//     {
+//         // 默认实现为，按照速度调整当前位置
+//         Location += Speed;
+//     }
+// }
 
-    /// 实现接口的方法 GetContent
-    public string GetContent()
-    {
-        if (PageNumber >= 0 && PageNumber < contents.Length)
-            // 获取页码 PageNumber 指定的页的内容
-            return contents[PageNumber];
-        else
-            // 如果 PageNumber 不合理，则返回空字符串
-            return string.Empty;
-    }
+// // 接口 IEMailable，表示可投递电子邮件
+// interface IEMailable
+// {
+//     // 属性 Location，表示电子邮件的地址
+//     public string Location { get; set; }
+// }
 
-    /// 笔记本中包含的每页的内容
-    string[] contents = new[] {
-        "这里是序章，我写了很多内容。。。",
-        "这里是第 1 页内容。。。",
-        "这里是第 2 页内容。。。",
-        "这里是第 3 页内容。。。",
-        "这里是第 4 页内容。。。",
-    };
-}
+// // 类 Car
+// class Car : IMovable, IEMailable
+// {
+//     // 显式实现了 IMovable 接口的成员 Location
+//     Vector2 IMovable.Location { get; set; }
+//     // 显式实现了 IEMailable 接口的成员 Location
+//     // 好吧，这是预约该车的方式
+//     string IEMailable.Location { get; set; } = string.Empty;
 
-/*
-请将以下代码复制到 Program.cs 中，以运行本节示例
+//     // 隐式实现了 IMovable 接口的成员 Speed
+//     public Vector2 Speed { get; set; }
+// }
 
-/// 读取并显示可读性内容
-void ReadSomething(IReadable something)
-{
-    while (true)
-    {
-        // 读取当前页内容，直到没有任何内容可读
-        string content = something.GetContent();
+// // 接口 IMovable，表示可旋转
+// interface IRotatable
+// {
+//     // 属性 Angle，表示当前角度
+//     public float Angle { get; set; }
+//     // 属性 Speed，表示旋转速度
+//     public float Speed { get; set; }
 
-        if (string.IsNullOrEmpty(content))
-            break;
+//     // 方法 Rotate，表示旋转一次
+//     public void Rotate()
+//     {
+//         // 默认实现为，按照速度旋转当前角度
+//         Angle += Speed;
+//     }
+// }
 
-        // 显示当前页内容，并使页码加 1
-        Console.WriteLine(content);
-        something.PageNumber++;
-    }
-}
-
-/// 创建 Note 类的实例，并通过 ReadSomething 显示其内容
-Note note = new();
-ReadSomething(note);
-*/
+// // 接口 IMovable，表示可驾驶
+// interface IDrivable : IMovable, IRotatable { }

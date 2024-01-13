@@ -53,9 +53,7 @@ class Manager : Employee
     }
 
     // 构造器，用于初始化管理者
-    public Manager(string n) : base(n)
-    { }
-
+    public Manager(string n) : base(n) { }
 }
 
 /*

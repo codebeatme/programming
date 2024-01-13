@@ -1,4 +1,4 @@
-// 基礎類別 Animal
+// 基底類別 Animal
 abstract class Animal
 {
     // 虛擬方法 Bark，嘗試發出聲音
@@ -16,7 +16,7 @@ class Kitty : Animal
     // Kitty 覆寫了繼承自 Animal 的方法 Bark
     public override void Bark()
     {
-        // 呼叫基礎類別的 Bark 方法
+        // 呼叫基底類別的 Bark 方法
         base.Bark();
 
         Console.WriteLine("喵喵喵！");
@@ -102,4 +102,16 @@ Kitty kitty = new Kitty();
 // 呼叫多載的 Eat 方法
 kitty.Eat("小魚幹");
 kitty.Eat();
+
+// 所有變數的類型均為 A，但真實的物件類型分別為 A，B，C，D
+A a = new A();
+A b = new B();
+A c = new C();
+A d = new D();
+
+// 分別呼叫他們的 Show 方法
+a.Show();
+b.Show();
+c.Show();
+d.Show();
 */

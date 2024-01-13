@@ -1,67 +1,57 @@
-/*
-本節文章
-https://learnscript.net/zh-hant/programming/part-2/interfaces-and-implement/ 什麽是介面，實作介面
-*/
+// using System.Numerics;
 
-// 以下程式碼與 interface_inheritance.cs 只能有一個不被註解
+// // 介面 IMovable，表示可移動
+// interface IMovable
+// {
+//     // 屬性 Location，表示當前位置
+//     public Vector2 Location { get; set; }
 
-/// 介面 IReadable，表示可讀性
-interface IReadable
-{
-    // 當前的頁碼
-    public int PageNumber { get; set; }
-    // 取得當前頁的內容
-    public string GetContent();
-}
+//     // 屬性 Speed，表示移動速度
+//     public Vector2 Speed { get; set; }
 
-/// 類別 Note，實作了介面 IReadable
-class Note : IReadable
-{
-    /// 實作介面的屬性 PageNumber
-    public int PageNumber { get; set; } = 0;
+//     // 方法 Move，表示移動一次
+//     public void Move()
+//     {
+//         // 預設實作為，按照速度調整當前位置
+//         Location += Speed;
+//     }
+// }
 
-    /// 實作介面的方法 GetContent
-    public string GetContent()
-    {
-        if (PageNumber >= 0 && PageNumber < contents.Length)
-            // 取得頁碼 PageNumber 指定的頁的內容
-            return contents[PageNumber];
-        else
-            // 如果 PageNumber 不合理，則傳回空字串
-            return string.Empty;
-    }
+// // 介面 IEMailable，表示可投遞電子郵件
+// interface IEMailable
+// {
+//     // 屬性 Location，表示電子郵件的位址
+//     public string Location { get; set; }
+// }
 
-    /// 筆記本中包含的每頁的內容
-    string[] contents = new[] {
-        "這裏是序章，我寫了很多內容。。。",
-        "這裏是第 1 頁內容。。。",
-        "這裏是第 2 頁內容。。。",
-        "這裏是第 3 頁內容。。。",
-        "這裏是第 4 頁內容。。。",
-    };
-}
+// // 類別 Car
+// class Car : IMovable, IEMailable
+// {
+//     // 明確實作了 IMovable 介面的成員 Location
+//     Vector2 IMovable.Location { get; set; }
+//     // 明確實作了 IEMailable 介面的成員 Location
+//     // 好吧，這是預約該車的方式
+//     string IEMailable.Location { get; set; } = string.Empty;
 
-/*
-請將以下程式碼複製到 Program.cs 中，以執行本節範例
+//     // 隱含實作了 IMovable 介面的成員 Speed
+//     public Vector2 Speed { get; set; }
+// }
 
-/// 讀取並顯示可讀性內容
-void ReadSomething(IReadable something)
-{
-    while (true)
-    {
-        // 讀取當前頁內容，直到沒有任何內容可讀
-        string content = something.GetContent();
+// // 介面 IMovable，表示可旋轉
+// interface IRotatable
+// {
+//     // 屬性 Angle，表示當前角度
+//     public float Angle { get; set; }
+//     // 屬性 Speed，表示旋轉速度
+//     public float Speed { get; set; }
 
-        if (string.IsNullOrEmpty(content))
-            break;
+//     // 方法 Rotate，表示旋轉一次
+//     public void Rotate()
+//     {
+//         // 預設實作為，按照速度旋轉當前角度
+//         Angle += Speed;
+//     }
+// }
 
-        // 顯示當前頁內容，並使頁碼加 1
-        Console.WriteLine(content);
-        something.PageNumber++;
-    }
-}
-
-/// 建立 Note 類別的執行個體，並通過 ReadSomething 顯示其內容
-Note note = new();
-ReadSomething(note);
-*/
+// // 介面 IMovable，表示可駕駛
+// interface IDrivable : IMovable, IRotatable { }

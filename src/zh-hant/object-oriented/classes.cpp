@@ -1,6 +1,6 @@
 #include <iostream>
 
-/// 基礎類別 A，擁有 Show 方法
+/// 基底類別 A，擁有 Show 方法
 class A
 {
 public:
