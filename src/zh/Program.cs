@@ -1,25 +1,23 @@
-﻿using System.Numerics;
+﻿// 组合成员 Monday 和 Tuesday
+DayOfWeek days = DayOfWeek.Monday | DayOfWeek.Tuesday;
 
-// 函数 Go，用来移动一个可移动的目标
-void Go(IMovable movable) {
+Console.WriteLine($"days={days}");
 
-    // 如果速度为 0，则不需要移动
-    if (movable.Speed == Vector2.Zero) {
-        Console.WriteLine("当前速度为 0？抛锚了？");
-        return;
-    }
+// 函数 Rest 将根据是否是周末来显示信息
+void Rest(DayOfWeek dayOfWeek)
+{
 
-    // 移动并显示位置
-    movable.Move();
-    Console.WriteLine($"移动后的位置：{movable.Speed}");
+    if ((dayOfWeek & DayOfWeek.Saturday) == DayOfWeek.Saturday || (dayOfWeek & DayOfWeek.Sunday) == DayOfWeek.Sunday)
+        Console.WriteLine("周末的味道！");
+    else
+        Console.WriteLine("枯燥的味道！");
+
 }
 
-// 创建 Car 的实例
-Car car = new()
-{
-    // 设置移动速度
-    Speed = new Vector2(1.5f, 2.5f)
-};
+// 传递周一，周五，周六的组合
+Rest(DayOfWeek.Monday | DayOfWeek.Friday | DayOfWeek.Saturday);
+// 传递周二，周三
+Rest(DayOfWeek.Tuesday | DayOfWeek.Wednesday);
 
-// 调用 Go 方法进行移动
-Go(car);
+Console.WriteLine((int)Color.Red);
+Console.WriteLine((int)Color.Yellow);
