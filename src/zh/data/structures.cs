@@ -1,4 +1,36 @@
-﻿// 创建结构 MyDate 的实例
+// 结构 MyDate，表示日期
+struct MyDate
+{
+    // 字段 Year，表示年份
+    public int Year;
+    // 字段 Month，表示月份
+    public int Month;
+    // 字段 Day，表示一月中的第几天
+    public int Day;
+    // 字段 Todo，表示当天需要完成的事情
+    public TODO Todo = new();
+
+    // 构造器
+    public MyDate(int year, int month, int day)
+    {
+        // 初始化结构的字段
+        Year = year;
+        Month = month;
+        Day = day;
+    }
+}
+
+// 类 TODO，表示需要完成的事情
+class TODO
+{
+    // 属性 Content，表示事情的内容
+    public string Content { get; set; } = string.Empty;
+}
+
+/*
+请将以下代码复制到 Program.cs 中，以运行本节示例
+
+// 创建结构 MyDate 的实例
 MyDate date = new(2024, 1, 16);
 
 // 尝试增加月份
@@ -27,3 +59,4 @@ dateTodo.Todo.Content = "有事了";
 
 Console.WriteLine($"{dateRest.Year}-{dateRest.Month}-{dateRest.Day}：{dateRest.Todo.Content}");
 Console.WriteLine($"{dateTodo.Year}-{dateTodo.Month}-{dateTodo.Day}：{dateTodo.Todo.Content}");
+*/
