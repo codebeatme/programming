@@ -18,7 +18,7 @@ fn('今天天氣不錯！')
 
 for (let x = 0; x < 2; x++)
     for (let y = 0; y < 2; y++) {
-        /// 執行時常數，其值在執行時確定
+        /// 執行階段常數，其值在執行階段確定
         const result = x * y
 
         console.log(result)
