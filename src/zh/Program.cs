@@ -1,8 +1,6 @@
-﻿// 创建 MiddleSchool 类的实例
-MiddleSchool school = new();
-// 为事件 OnMessage 编写代码
-school.OnMessage += (object? sender, EventArgs e) =>
-    Console.WriteLine($"接到了学校的消息：{(e as MessageArgs)?.Message}");
+﻿AppDomain.CurrentDomain.UnhandledException += (object sender, UnhandledExceptionEventArgs e) =>
+    Console.WriteLine($"你看，异常找上门了！{e}");
 
-// 调用 ClassBegin，事件 OnMessage 将被触发
-school.ClassBegin();
+int dividend = 1;
+int divisor = 0;
+int result = dividend / divisor;
