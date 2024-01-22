@@ -1,10 +1,6 @@
 /*
 // 顯示歡迎訊息的函式
-void Welcome(
-	string name,
-	// message 是一個選擇性參數，擁有預設值 "你好！{0}"
-	string message = "你好！{0}"
-	)
+void Welcome(string name, string message = "你好！{0}")
 {
 	Console.WriteLine(message, name);
 }
@@ -13,10 +9,7 @@ void Welcome(
 Welcome("大花貓");
 
 // 顯示一組水果的函式
-void ListFruit(
-	// list 是一個可變參數
-	params string[] list
-	)
+void ListFruit(params string[] list)
 {
 	Console.WriteLine($"一共有 {list.Length} 個水果");
 

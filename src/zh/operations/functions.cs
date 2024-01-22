@@ -1,10 +1,6 @@
 /*
 // 显示欢迎消息的函数
-void Welcome(
-	string name,
-	// message 是一个可选参数，拥有默认值 "你好！{0}"
-	string message = "你好！{0}"
-	)
+void Welcome(string name, string message = "你好！{0}")
 {
 	Console.WriteLine(message, name);
 }
@@ -13,10 +9,7 @@ void Welcome(
 Welcome("大花猫");
 
 // 显示一组水果的函数
-void ListFruit(
-	// list 是一个可变参数
-	params string[] list
-	)
+void ListFruit(params string[] list)
 {
 	Console.WriteLine($"一共有 {list.Length} 个水果");
 

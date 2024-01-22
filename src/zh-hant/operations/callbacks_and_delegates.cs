@@ -26,12 +26,10 @@ class MessageArgs : EventArgs
 請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
 // 委派 Loaded 的執行個體 showMessage
-Loaded showMessage = data =>
-    Console.WriteLine("資料下載完畢！");
+Loaded showMessage = data => Console.WriteLine("資料下載完畢！");
 
 // 委派 Loaded 的執行個體 showData
-Loaded showData = data =>
-    Console.WriteLine($"資料內容為：{data}");
+Loaded showData = data => Console.WriteLine($"資料內容為：{data}");
 
 // 合併 showMessage，showData
 Loaded loaded = showMessage + showData;

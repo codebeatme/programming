@@ -63,7 +63,8 @@ interface IDrivable : IMovable, IRotatable { }
 using System.Numerics;
 
 // 函数 Go，用来移动一个可移动的目标
-void Go(IMovable movable) {
+void Go(IMovable movable)
+{
 
     // 如果速度为 0，则不需要移动
     if (movable.Speed == Vector2.Zero) {
