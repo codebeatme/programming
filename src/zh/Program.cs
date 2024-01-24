@@ -2,7 +2,8 @@
 int total = 0;
 
 // 函数 sum，进行加法计算
-void sum(int num) {
+void sum(int num)
+{
     // 函数内可以访问函数外的变量 total
     total += num;
 }

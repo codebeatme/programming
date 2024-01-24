@@ -33,7 +33,8 @@ namespace World.Animals
 int total = 0;
 
 // 函式 sum，進行加法計算
-void sum(int num) {
+void sum(int num)
+{
     // 函式內可以存取函式外的變數 total
     total += num;
 }
