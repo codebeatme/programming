@@ -96,13 +96,13 @@ cannon.Attack(100, true);
 // 類別 Cannon，表示加農炮
 class Cannon
 {
-	// 第一個 Attack 方法，只有一個整數類型參數
+	// 第一個 Attack 方法，只有一個整數型別參數
 	public void Attack(int point)
 	{
 		Console.WriteLine($"可造成 {point} 點傷害");
 	}
 
-	// 第二個 Attack 方法，有一個整數類型參數和一個布林類型參數
+	// 第二個 Attack 方法，有一個整數型別參數和一個布林型別參數
 	public void Attack(int point, bool critical)
 	{
 		Console.WriteLine($"可造成 {point} 點傷害 [暴擊？{critical}]");

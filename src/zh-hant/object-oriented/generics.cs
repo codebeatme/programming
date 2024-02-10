@@ -10,11 +10,11 @@ class Box
         items = i ?? Array.Empty<object>();
     }
 
-    // 泛型方法 GetFirst，取得陣列中第一個類型為 T 的元素
+    // 泛型方法 GetFirst，取得陣列中第一個型別為 T 的元素
     // public T? GetFirst<T>()
     public T? GetFirst<T>() where T : class
     {
-        // 如果元素的類型與 T 一致，則傳回
+        // 如果元素的型別與 T 一致，則傳回
         foreach (object item in items)
             if (item.GetType() == typeof(T))
                 return (T)item;
@@ -26,7 +26,7 @@ class Box
 /*
 請將以下程式碼複製到 Program.cs 中，以執行本節範例
 
-// 類型參數 T 被指定為 string
+// 型別參數 T 被指定為 string
 List<string> nicknames = new();
 
 // 建立 Box 的執行個體 box

@@ -1,4 +1,4 @@
-// delegate 是一個語法糖，他會轉化為一個類別的定義
+// delegate 是一個語法糖，他會轉換為一個類別的定義
 delegate void Loaded(string data);
 
 // 類別 MiddleSchool，表示中學

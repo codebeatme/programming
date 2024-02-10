@@ -1,7 +1,7 @@
 // 類別 Flower，表示一朵花
 class Flower
 {
-    // 巢狀類型 Color
+    // 巢狀型別 Color
     enum Color
     {
         // 沒有色彩

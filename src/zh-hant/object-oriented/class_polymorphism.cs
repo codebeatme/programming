@@ -103,7 +103,7 @@ Kitty kitty = new Kitty();
 kitty.Eat("小魚幹");
 kitty.Eat();
 
-// 所有變數的類型均為 A，但真實的物件類型分別為 A，B，C，D
+// 所有變數的型別均為 A，但真實的物件型別分別為 A，B，C，D
 A a = new A();
 A b = new B();
 A c = new C();

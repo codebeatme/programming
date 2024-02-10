@@ -1,13 +1,13 @@
 /*
 本節文章
-https://learnscript.net/zh-hant/programming/part-4/nested-types/ 什麽是巢狀類型
+https://learnscript.net/zh-hant/programming/part-4/nested-types/ 什麽是巢狀型別
 */
 
 // // 類別 Flower，表示一朵花
 // class Flower
 // {
 
-//     // 巢狀類型 Color，用來表示花的色彩
+//     // 巢狀型別 Color，用來表示花的色彩
 //     enum Color
 //     {
 //         // 沒有色彩
