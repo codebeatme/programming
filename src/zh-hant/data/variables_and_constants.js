@@ -6,9 +6,9 @@ console.log(age)
 // // ERROR 變數 student 沒有被定義過，這會導致例外狀況
 // console.log(student)
 
-// 一個將資訊發送給客戶的函式
+// 一個將資訊傳送給客戶的函式
 function sendToClient(message) {
-    console.log(`發送給客戶：${message}`)
+    console.log(`傳送給客戶：${message}`)
 }
 
 // 將函式 sendToClient 指派給變數 fn

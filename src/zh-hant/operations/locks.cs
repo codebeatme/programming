@@ -3,13 +3,13 @@
 
 // 余額，初始值為 1000
 int balance = 1000;
-// 用來請求鎖定的權杖
+// 用來要求鎖定的權杖
 object locker = new();
 
-// 函式 Pay，進行支付作業
+// 函式 Pay，進行支付操作
 void Pay(int amount)
 {
-    // 請求獨占鎖定，確保只有一個目標正在存取 balance
+    // 要求獨占鎖定，確保只有一個目標正在存取 balance
     lock (locker)
     {
         balance -= amount;
@@ -21,7 +21,7 @@ void Pay(int amount)
 // 取得當前的余額
 int GetBalance()
 {
-    // 請求獨占鎖定，確保只有一個目標正在存取 balance
+    // 要求獨占鎖定，確保只有一個目標正在存取 balance
     lock (locker)
         return balance;
 }
@@ -34,7 +34,7 @@ Console.WriteLine("現在我要檢視余額！");
 // 呼叫 GetBalance 將陷入等待，因為此時 Pay 方法持有鎖定
 Console.WriteLine($"余額：{GetBalance()}");
 
-// 用來請求鎖定的權杖
+// 用來要求鎖定的權杖
 object lockerA = new();
 object lockerB = new();
 
